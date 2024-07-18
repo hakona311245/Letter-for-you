@@ -30,12 +30,13 @@ body{
   position: relative;
   width: 300px;
   height: 230px;
+  z-index: 1; /* Lower z-index for the envelope */
 }
 .envelope-wrapper > .envelope::before {
   content: "";
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 2; /* Lower z-index for the envelope tab */
   border-top: 130px solid var(--envelope-tab);
   border-right: 150px solid transparent;
   border-left: 150px solid transparent;
@@ -45,7 +46,7 @@ body{
 .envelope-wrapper > .envelope::after {
   content: "";
   position: absolute;
-  z-index: 2;
+  z-index: 2; /* Lower z-index for the envelope cover */
   width: 0px;
   height: 0px;
   border-top: 130px solid transparent;
@@ -64,6 +65,8 @@ body{
   transition: all 1s ease-in-out;
   box-shadow: 0 0 5px var(--shadow-color);
   padding: 20px 10px;
+  z-index: 0; /* Lower z-index for the letter initially */
+  overflow: auto;
 }
 
 .envelope > .letter > .text {
@@ -108,6 +111,7 @@ body{
   bottom: 100px;
   transform: scale(1.5);
   transition-delay: 1s;
+  z-index: 3; /* Higher z-index for the letter when open */
 }
 .flap > .heart {
   transform: rotate(90deg);
