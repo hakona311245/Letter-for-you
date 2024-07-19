@@ -17,6 +17,9 @@ body{
   align-items: center;
   justify-content: center;
 }
+.img-container{
+  margin-left: 5%;
+}
 .container {
   height: 100vh;
   display: grid;
@@ -117,3 +120,5 @@ body{
   transform: rotate(90deg);
   transition-delay: 0.4s;
 }
+
+
