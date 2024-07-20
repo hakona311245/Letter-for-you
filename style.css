@@ -1,11 +1,11 @@
 :root{
-  --primary: #2c2a2a;
-  --bg-color: #2f2e46;
+  --primary: #ffffff;
+  --bg-color: #BBE9FF;
   --bg-envelope-color: #f5edd1;
   --envelope-tab: #FFE9D0;
   --envelope-cover: #FFE9D0;
   --shadow-color: rgba(0, 0, 0, 0.2);
-  --txt-color: #ffffff;
+  --txt-color: #000000;
   --heart-color: #ee4949;
 }
 body{
